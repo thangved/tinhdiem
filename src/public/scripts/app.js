@@ -55,7 +55,7 @@ function calculate() {
             }
             drawChart(data)
             appendGradeTexts(data)
-            average.innerHTML = data.average
+            average.innerHTML = String(data.average).slice(0,4)
             
         })
 }
