@@ -28,4 +28,4 @@ app.use('/', (req, res) => {
     res.render('home')
 })
 
-app.listen(3000)
+app.listen(PORT)
