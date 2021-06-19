@@ -1,0 +1,30 @@
+{
+  "name": "tinhdiem",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000t\u0000i\u0000n\u0000h\u0000d\u0000i\u0000e\u0000m\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thangved/tinhdiem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thangved/tinhdiem/issues"
+  },
+  "homepage": "https://github.com/thangved/tinhdiem#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "handlebars": "^4.7.7",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

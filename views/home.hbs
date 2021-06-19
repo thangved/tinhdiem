@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="/css/app.css">
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-12 col-lg-6">
+
+            <table class="table" id="tableGrades">
+
+                <tr class="table-item">
+
+                    <td>Tên học phần</td>
+                    <td>Điểm số</td>
+                    <td>Số tín chỉ</td>
+                    <td>Điểm chữ</td>
+
+                </tr>
+
+                <tr>
+
+                    <td><input class="form-control grades-title" type="text" value="test"></td>
+                    <td><input class="form-control grades-value" type="number" value="5"></td>
+                    <td><input class="form-control grades-weight" type="number" value="4"></td>
+                    <td><input readonly class="form-control grades-text" type="text"></td>
+
+                </tr>
+
+            </table>
+
+            <div class="col-12 row" style="justify-content: space-around;">
+
+                <div class="tools">
+
+                    <div class="icon icon-add" id="addButton"></div>
+                    <div class="icon icon-remove" id="removeButton"></div>
+                    <div class="icon icon-calculate" id="calculateButton"></div>
+
+                </div>
+
+                <div class="tools">
+                    Điểm trung bình <div class="icon average"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-12 col-lg-6">
+
+
+            <div id="chartjs">
+
+                <div class="tools">
+
+                    <div class="icon icon-pie chartValue active" value="polarArea"></div>
+                    <div class="icon icon-bars chartValue" value="bar"></div>
+                    <div class="icon icon-radar chartValue" value="radar"></div>
+                    <div class="icon icon-line chartValue" value="line"></div>
+
+                </div>
+
+                <canvas></canvas>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+{{!-- script --}}
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="/scripts/app.js"></script>
