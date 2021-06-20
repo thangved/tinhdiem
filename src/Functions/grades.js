@@ -13,7 +13,7 @@ function grades(data) {
                 reject("Có trường bị thiếu.")
                 return
             }
-            if(gr.value > 10){
+            if(gr.value > 10 || gr.value < 0){
                 reject(`Môn ${gr.title} có điểm không hợp lệ`)
             }
             data[index].value = Number(data[index].value)
