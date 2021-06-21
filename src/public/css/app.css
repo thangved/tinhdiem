@@ -91,6 +91,16 @@ body{
     bottom: 0;
 }
 
+.tools-table{
+    opacity: 0;
+    transition: 0.4s ease;
+}
+.tools-table:hover{
+    opacity: 1;
+}
+.table-tab:hover .tools-table{
+    opacity: 1;
+}
 @keyframes fly{
     0%{
     }
